@@ -26,3 +26,8 @@ SELECT
         ELSE 'Yashoda'
     END
 FROM generate_series(1,100) gs;
+
+INSERT INTO patients (name, age, gender, disease, admission_date, hospital)
+VALUES 
+('Patient_200', 50, 'Male', 'Diabetes', CURRENT_DATE, 'Apollo'),
+('Patient_201', 28, 'Female', 'Asthma', CURRENT_DATE, 'KIMS');
